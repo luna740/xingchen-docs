@@ -8,19 +8,39 @@ const SITE_DIR = path.join(ROOT, "site");
 
 const KNOWN_IDS = new Map([
   ["星辰Whatsapp使用手册V2.0/如何在星辰登录whatsapp账号.md", "69a7d0daa889b919f4222ff9"],
+  ["星辰Whatsapp使用手册V2.0/如何打开浏览器通知.md", "6a0dabf9db178f1cad82b71f"],
 ]);
 
 const CATEGORY_ORDER = [
   "星辰Whatsapp使用手册V2.0",
-  "星辰whatsapp协议常见问题",
-  "星辰whatsapp协议优势",
-  "星辰使用建议",
-  "封控",
+  "常见问题",
 ];
+
+const MANUAL_CATEGORY = "星辰Whatsapp使用手册V2.0";
+const FAQ_CATEGORY = "常见问题";
+const FAQ_ARTICLE_IDS = new Set([
+  "b72601dc3d6015a537f1e7bc",
+]);
 
 const PINNED_ARTICLE_ORDER = {
   "星辰Whatsapp使用手册V2.0": [
     "69a7d0daa889b919f4222ff9",
+    "8a8a83d08de3e1db318905f2",
+    "4bd71ff4ff791cc70cb2b33a",
+    "3c582c7841373f5b2c92ce9c",
+    "43378e8e2b9f173541747e4b",
+    "130fdeea74a9912da4275485",
+    "6a0dabf9db178f1cad82b71f",
+    "24a22d888bf7ec11a807a1b6",
+    "8983db65132cba9a1dc96751",
+    "7466efc325536dd41f9258fa",
+    "75d4ce22d9f68f92fa0d7e6e",
+    "d4e55cd8ffc5569b71db6eeb",
+    "749e3e05e9e68b4ea6aca3a0",
+    "58b9b6849105343563639e9c",
+    "fad933e15da3a515f5882972",
+    "2388935951e7ec39c9beafb2",
+    "d4b3c2a02ced51eec27b6ad2",
   ],
 };
 
@@ -234,7 +254,8 @@ async function buildData() {
       relative,
       id,
       title: meta.title,
-      category: meta.category,
+      category: FAQ_ARTICLE_IDS.has(id) ? FAQ_CATEGORY : (meta.category === MANUAL_CATEGORY ? MANUAL_CATEGORY : FAQ_CATEGORY),
+      sourceCategory: meta.category,
       updatedAt: meta.updatedAt,
       bodyLines: meta.bodyLines,
     };
