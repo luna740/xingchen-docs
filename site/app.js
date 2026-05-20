@@ -50,15 +50,19 @@ function renderNav(filter = "") {
   const query = filter.trim().toLowerCase();
   nav.innerHTML = "";
   let visibleCount = 0;
+
   for (const section of data) {
     const articles = section.articles.filter(article => {
       if (!query) return true;
-      return (article.title + " " + article.searchText).toLowerCase().includes(query);
+      return `${article.title} ${article.searchText}`.toLowerCase().includes(query);
     });
+
     if (!articles.length) continue;
     visibleCount += articles.length;
+
     const group = document.createElement("section");
     group.className = "category" + (collapsed.has(section.category.id) && !query ? " collapsed" : "");
+
     const toggle = document.createElement("button");
     toggle.type = "button";
     toggle.className = "category-toggle";
@@ -68,6 +72,7 @@ function renderNav(filter = "") {
       else collapsed.add(section.category.id);
       renderNav(searchInput.value);
     });
+
     const list = document.createElement("div");
     list.className = "category-items";
     for (const article of articles) {
@@ -78,9 +83,11 @@ function renderNav(filter = "") {
       button.addEventListener("click", () => showArticle(article.id));
       list.appendChild(button);
     }
+
     group.append(toggle, list);
     nav.appendChild(group);
   }
+
   navStatus.textContent = query ? `找到 ${visibleCount} 篇匹配文档` : "按分类浏览全部文档";
 }
 
@@ -91,6 +98,7 @@ function slugifyHeading(text, index) {
 function renderToc() {
   tocNav.innerHTML = "";
   const headings = [...body.querySelectorAll("h2")].filter(heading => heading.textContent.trim());
+
   headings.forEach((heading, index) => {
     if (!heading.id) heading.id = slugifyHeading(heading.textContent, index);
     const link = document.createElement("a");
@@ -103,19 +111,20 @@ function renderToc() {
     });
     tocNav.appendChild(link);
   });
+
   if (!headings.length) tocNav.innerHTML = '<span class="toc-empty">暂无小节</span>';
 }
 
 function renderPager(record) {
   const articles = allArticles();
   const index = articles.findIndex(article => article.id === record.id);
-  const prev = articles[index - 1];
-  const next = articles[index + 1];
+  const items = [
+    { label: "上一篇", article: articles[index - 1] },
+    { label: "下一篇", article: articles[index + 1] },
+  ];
+
   pager.innerHTML = "";
-  for (const item of [
-    { label: "上一篇", article: prev },
-    { label: "下一篇", article: next },
-  ]) {
+  for (const item of items) {
     const button = document.createElement("button");
     button.type = "button";
     button.disabled = !item.article;
@@ -127,15 +136,29 @@ function renderPager(record) {
   }
 }
 
+function enhanceArticle() {
+  body.querySelectorAll("figure").forEach((figure, index) => {
+    if (!figure.querySelector("figcaption")) {
+      const caption = document.createElement("figcaption");
+      caption.textContent = `截图 ${index + 1}`;
+      figure.appendChild(caption);
+    }
+  });
+}
+
 function showArticle(id) {
-  const record = allArticles().find(article => article.id === id) || allArticles()[0];
+  const articles = allArticles();
+  const record = articles.find(article => article.id === id) || articles[0];
   if (!record) return;
+
   activeId = record.id;
   title.textContent = record.title;
   breadcrumb.textContent = record.category.name;
   meta.textContent = `更新时间：${formatDate(record.updatedAt)} · ${record.category.name}`;
   body.innerHTML = record.html || "<p>这篇文章没有正文内容。</p>";
+
   history.replaceState(null, "", "#" + encodeURIComponent(record.id));
+  enhanceArticle();
   renderToc();
   renderPager(record);
   renderNav(searchInput.value);
@@ -152,6 +175,7 @@ scrim.addEventListener("click", closeSidebar);
 themeToggle.addEventListener("click", () => {
   setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
 });
+
 body.addEventListener("click", event => {
   const link = event.target.closest("a[href^='#']");
   if (!link) return;
@@ -160,6 +184,7 @@ body.addEventListener("click", event => {
   event.preventDefault();
   showArticle(id);
 });
+
 body.addEventListener("click", event => {
   const image = event.target.closest("img");
   if (!image) return;
@@ -167,18 +192,22 @@ body.addEventListener("click", event => {
   lightbox.classList.add("open");
   lightbox.setAttribute("aria-hidden", "false");
 });
+
 function closeLightbox() {
   lightbox.classList.remove("open");
   lightbox.setAttribute("aria-hidden", "true");
   lightboxImage.removeAttribute("src");
 }
+
 lightbox.addEventListener("click", event => {
   if (event.target === lightbox) closeLightbox();
 });
 lightboxClose.addEventListener("click", closeLightbox);
+
 window.addEventListener("scroll", () => {
   const max = document.documentElement.scrollHeight - window.innerHeight;
   progress.style.width = max > 0 ? Math.min(100, (window.scrollY / max) * 100) + "%" : "0";
+
   const headings = [...body.querySelectorAll("h2")];
   let current = null;
   for (const heading of headings) {
@@ -188,6 +217,7 @@ window.addEventListener("scroll", () => {
     link.classList.toggle("active", current && link.getAttribute("href") === "#" + current);
   });
 });
+
 document.addEventListener("keydown", event => {
   if (event.key === "Escape") {
     closeSidebar();
