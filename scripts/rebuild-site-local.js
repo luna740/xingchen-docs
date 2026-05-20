@@ -6,34 +6,28 @@ const ROOT = process.cwd();
 const DOCS_DIR = path.join(ROOT, "docs");
 const SITE_DIR = path.join(ROOT, "site");
 
-const KNOWN_IDS = new Map([
-  ["星辰Whatsapp使用手册V2.0/如何在星辰登录whatsapp账号.md", "69a7d0daa889b919f4222ff9"],
-  ["星辰Whatsapp使用手册V2.0/如何打开浏览器通知.md", "6a0dabf9db178f1cad82b71f"],
-]);
 
 const CATEGORY_ORDER = [
-  "星辰Whatsapp使用手册V2.0",
-  "常见问题",
+  "\u661f\u8fb0Whatsapp\u4f7f\u7528\u624b\u518cV2.0",
+  "\u5e38\u89c1\u95ee\u9898",
+  "\u6d4b\u8bd5\u7ed3\u679c",
 ];
 
-const MANUAL_CATEGORY = "星辰Whatsapp使用手册V2.0";
-const FAQ_CATEGORY = "常见问题";
-const FAQ_ARTICLE_IDS = new Set([
-  "b72601dc3d6015a537f1e7bc",
-]);
-
 const PINNED_ARTICLE_ORDER = {
-  "星辰Whatsapp使用手册V2.0": [
+  "\u661f\u8fb0Whatsapp\u4f7f\u7528\u624b\u518cV2.0": [
     "69a7d0daa889b919f4222ff9",
     "8a8a83d08de3e1db318905f2",
     "4bd71ff4ff791cc70cb2b33a",
     "3c582c7841373f5b2c92ce9c",
+    "130e72704a7ad203b64004ca",
+    "7d0b620f82cc816acc54d963",
     "43378e8e2b9f173541747e4b",
     "130fdeea74a9912da4275485",
     "6a0dabf9db178f1cad82b71f",
     "24a22d888bf7ec11a807a1b6",
     "8983db65132cba9a1dc96751",
     "7466efc325536dd41f9258fa",
+    "91607c6bee58eee082787eba",
     "75d4ce22d9f68f92fa0d7e6e",
     "d4e55cd8ffc5569b71db6eeb",
     "749e3e05e9e68b4ea6aca3a0",
@@ -41,8 +35,34 @@ const PINNED_ARTICLE_ORDER = {
     "fad933e15da3a515f5882972",
     "2388935951e7ec39c9beafb2",
     "d4b3c2a02ced51eec27b6ad2",
+    "14954024065c4b5ad2b53205",
+    "1bb06441c03c0b4cf92ddb34",
+  ],
+  "\u5e38\u89c1\u95ee\u9898": [
+    "a2980b63aff5e5944f3a8147",
+    "017fd6fd9859424b3e429587",
+    "d4fe0f681bdbb9233865dd6b",
+    "07e22c3e84fe58064e09a284",
+    "4f6105e4d0d02911ec7af302",
+    "63e2871f32f32b3994cef5d6",
+    "b72601dc3d6015a537f1e7bc",
+    "4cdbbb52f226f7030f1d3595",
+    "9ed854efdcee60e3469dab41",
+    "4dcffb42881078e696792326",
+    "e54e9c3d3ba7b25d7e4fc735",
+    "0060aa2996494c2ba72a6382",
+  ],
+  "\u6d4b\u8bd5\u7ed3\u679c": [
+    "4c12206ddddf3471b6e3e5c0",
   ],
 };
+
+const HIDDEN_ARTICLE_IDS = new Set([
+  "ca40a1a5e77bad3ae2d060b4",
+  "7afb2255add78d6610d66d44",
+  "4363fef8e90eeb39ffd64ca7",
+  "6380957ca4286f742b8aa074",
+]);
 
 function posixPath(value) {
   return value.split(path.sep).join("/");
@@ -84,15 +104,20 @@ async function listMarkdownFiles(dir = DOCS_DIR) {
 
 function readMeta(markdown, fallbackTitle, fallbackCategory) {
   const lines = markdown.split(/\r?\n/);
+  const categoryPrefix = "\u5206\u7c7b\uff1a";
+  const updatedPrefix = "\u66f4\u65b0\u65f6\u95f4\uff1a";
+  const idPrefix = "ID\uff1a";
   const titleLine = lines.find(line => line.startsWith("# "));
-  const categoryLine = lines.find(line => line.startsWith("分类："));
-  const updatedLine = lines.find(line => line.startsWith("更新时间："));
-  const firstBodyLine = lines.findIndex((line, index) => index > 0 && line.trim() && !line.startsWith("分类：") && !line.startsWith("更新时间："));
+  const categoryLine = lines.find(line => line.startsWith(categoryPrefix));
+  const updatedLine = lines.find(line => line.startsWith(updatedPrefix));
+  const idLine = lines.find(line => line.startsWith(idPrefix));
+  const firstBodyLine = lines.findIndex((line, index) => index > 0 && line.trim() && !line.startsWith(categoryPrefix) && !line.startsWith(updatedPrefix) && !line.startsWith(idPrefix));
 
   return {
     title: titleLine ? titleLine.replace(/^#\s+/, "").trim() : fallbackTitle,
-    category: categoryLine ? categoryLine.replace(/^分类：/, "").trim() : fallbackCategory,
-    updatedAt: updatedLine ? updatedLine.replace(/^更新时间：/, "").trim() : "",
+    category: categoryLine ? categoryLine.slice(categoryPrefix.length).trim() : fallbackCategory,
+    updatedAt: updatedLine ? updatedLine.slice(updatedPrefix.length).trim() : "",
+    id: idLine ? idLine.slice(idPrefix.length).trim() : "",
     bodyLines: lines.slice(Math.max(firstBodyLine, 1)),
   };
 }
@@ -248,13 +273,15 @@ async function buildData() {
     const fallbackTitle = path.basename(file, ".md");
     const markdown = await fs.readFile(file, "utf8");
     const meta = readMeta(markdown, fallbackTitle, category);
-    const id = KNOWN_IDS.get(relative) || stableId(relative);
+    const id = meta.id || stableId(relative);
+    if (HIDDEN_ARTICLE_IDS.has(id)) continue;
+
     const record = {
       file,
       relative,
       id,
       title: meta.title,
-      category: FAQ_ARTICLE_IDS.has(id) ? FAQ_CATEGORY : (meta.category === MANUAL_CATEGORY ? MANUAL_CATEGORY : FAQ_CATEGORY),
+      category: meta.category,
       sourceCategory: meta.category,
       updatedAt: meta.updatedAt,
       bodyLines: meta.bodyLines,
