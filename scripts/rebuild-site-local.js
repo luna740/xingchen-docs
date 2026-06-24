@@ -86,6 +86,7 @@ function inlineMarkdown(text, linkResolver) {
   const greenShield = '<span class="shield-label shield-label-green">【绿色】<svg aria-hidden="true" class="svg-icon trust-icon green"><use href="#icon-chat-trust"></use></svg></span>';
   const orangeShield = '<span class="shield-label shield-label-orange">【橙色】<svg aria-hidden="true" class="svg-icon trust-icon yellow"><use href="#icon-chat-trust"></use></svg></span>';
   html = html.replace(/&lt;span class=&quot;doc-blue-strong&quot;&gt;([\s\S]+?)&lt;\/span&gt;/g, '<span class="doc-blue-strong">$1</span>');
+  html = html.replace(/&lt;strong class=&quot;doc-blue-strong&quot;&gt;([\s\S]+?)&lt;\/strong&gt;/g, '<strong class="doc-blue-strong">$1</strong>');
   html = html.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
   html = html.replace(/~~([\s\S]+?)~~/g, "<del>$1</del>");
   html = html.replace(/【绿色】/g, greenShield);
