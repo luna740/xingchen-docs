@@ -84,6 +84,7 @@ function escapeHtml(input = "") {
 function inlineMarkdown(text, linkResolver) {
   let html = escapeHtml(text);
   html = html.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+  html = html.replace(/~~([\s\S]+?)~~/g, "<del>$1</del>");
   html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_match, label, href) => {
     const target = linkResolver(href);
     return `<a href="${escapeHtml(target)}">${label}</a>`;
