@@ -83,12 +83,14 @@ function escapeHtml(input = "") {
 
 function inlineMarkdown(text, linkResolver) {
   let html = escapeHtml(text);
+  const greenShield = '<span class="shield-label shield-label-green">【绿色】<svg aria-hidden="true" class="svg-icon trust-icon green"><use href="#icon-chat-trust"></use></svg></span>';
+  const orangeShield = '<span class="shield-label shield-label-orange">【橙色】<svg aria-hidden="true" class="svg-icon trust-icon yellow"><use href="#icon-chat-trust"></use></svg></span>';
   html = html.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
   html = html.replace(/~~([\s\S]+?)~~/g, "<del>$1</del>");
-  html = html.replace(/【绿色】/g, '<span class="shield-label shield-label-green">【绿色】🛡️</span>');
-  html = html.replace(/【橙色】/g, '<span class="shield-label shield-label-orange">【橙色】🛡️</span>');
-  html = html.replace(/【绿色盾牌】/g, '<span class="shield-label shield-label-green">【绿色】🛡️</span>盾牌');
-  html = html.replace(/【橙色盾牌】/g, '<span class="shield-label shield-label-orange">【橙色】🛡️</span>盾牌');
+  html = html.replace(/【绿色】/g, greenShield);
+  html = html.replace(/【橙色】/g, orangeShield);
+  html = html.replace(/【绿色盾牌】/g, `${greenShield}盾牌`);
+  html = html.replace(/【橙色盾牌】/g, `${orangeShield}盾牌`);
   html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_match, label, href) => {
     const target = linkResolver(href);
     return `<a href="${escapeHtml(target)}">${label}</a>`;
@@ -346,6 +348,13 @@ function siteHtml(data) {
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+  <svg aria-hidden="true" width="0" height="0" style="position:absolute;overflow:hidden">
+    <symbol id="icon-chat-trust" viewBox="0 0 1024 1024">
+      <path d="M512 64 160 192v266c0 224 142 421 352 502 210-81 352-278 352-502V192L512 64z"></path>
+      <path d="M512 164 256 257v209c0 161 100 306 256 379 156-73 256-218 256-379V257L512 164z" opacity=".28"></path>
+      <path d="m449 585-98-98-62 62 160 160 286-286-62-62-224 224z" fill="#fff"></path>
+    </symbol>
+  </svg>
   <div class="progress" id="progress"></div>
   <aside class="sidebar">
     <div class="brand">

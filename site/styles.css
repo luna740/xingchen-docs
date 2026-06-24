@@ -315,6 +315,9 @@ h1 {
 }
 
 .shield-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
   font-weight: 750;
   white-space: nowrap;
 }
@@ -325,6 +328,22 @@ h1 {
 
 .shield-label-orange {
   color: #9a3412;
+}
+
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  flex: 0 0 auto;
+  vertical-align: -2px;
+}
+
+.trust-icon.green {
+  color: #166534;
+}
+
+.trust-icon.yellow {
+  color: #d97706;
 }
 
 .doc .lead {
