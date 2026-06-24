@@ -314,6 +314,11 @@ h1 {
   font-weight: 750;
 }
 
+.doc-blue-strong {
+  color: #1d4ed8;
+  font-weight: 750;
+}
+
 .shield-label {
   display: inline-flex;
   align-items: center;
