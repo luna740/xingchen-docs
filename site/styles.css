@@ -314,6 +314,19 @@ h1 {
   font-weight: 750;
 }
 
+.shield-label {
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+.shield-label-green {
+  color: #166534;
+}
+
+.shield-label-orange {
+  color: #9a3412;
+}
+
 .doc .lead {
   margin: 4px 0 28px;
   padding: 14px 16px;

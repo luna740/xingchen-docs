@@ -85,6 +85,10 @@ function inlineMarkdown(text, linkResolver) {
   let html = escapeHtml(text);
   html = html.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
   html = html.replace(/~~([\s\S]+?)~~/g, "<del>$1</del>");
+  html = html.replace(/【绿色】/g, '<span class="shield-label shield-label-green">【绿色】🛡️</span>');
+  html = html.replace(/【橙色】/g, '<span class="shield-label shield-label-orange">【橙色】🛡️</span>');
+  html = html.replace(/【绿色盾牌】/g, '<span class="shield-label shield-label-green">【绿色】🛡️</span>盾牌');
+  html = html.replace(/【橙色盾牌】/g, '<span class="shield-label shield-label-orange">【橙色】🛡️</span>盾牌');
   html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_match, label, href) => {
     const target = linkResolver(href);
     return `<a href="${escapeHtml(target)}">${label}</a>`;
