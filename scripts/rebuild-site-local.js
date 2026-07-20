@@ -37,6 +37,7 @@ const PINNED_ARTICLE_ORDER = {
     "d4b3c2a02ced51eec27b6ad2",
     "14954024065c4b5ad2b53205",
     "1bb06441c03c0b4cf92ddb34",
+    "6a5e04a3ab7e481ca52c30d4",
   ],
   "\u5e38\u89c1\u95ee\u9898": [
     "a2980b63aff5e5944f3a8147",
