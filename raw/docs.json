@@ -19,7 +19,7 @@
     "category": {
       "id": "4623ca0b97109196381e087b",
       "name": "星辰Whatsapp使用手册V2.0",
-      "articlesCount": 28
+      "articlesCount": 30
     },
     "articles": [
       {
@@ -191,6 +191,13 @@
         "html": "<h2>查看端口是否过期</h2>\n<ol class=\"doc-list\"><li>打开 WhatsApp 账号列表，筛选“在线”的账号。</li><li>滑动到“端口过期”这一列，可以通过排序查看到期时间。</li></ol>\n<figure><img src=\"./assets/images/manual-port-expiry-mwwzmigyta-887e645df2.png\" alt=\"\" loading=\"lazy\"></figure>\n<h2>开启自动续费</h2>\n<p>开启自动续费后，系统会在到期前一天续费一个月，同时扣除对应余额。</p>\n<ol class=\"doc-list\"><li>找到需要续费的账号，滑动到“自动续费端口”这一列。</li><li>操作开关，可以开启或关闭自动续费。系统会出现二次确认弹窗，点击确认按钮。</li></ol>\n<figure><img src=\"./assets/images/manual-port-expiry-lilskwuvg9-6c2eb0aa2b.png\" alt=\"\" loading=\"lazy\"></figure>\n<h2>查询扣费记录</h2>\n<p>自动续费端口的扣费记录查询路径：</p>\n<p>个人设置 -&gt; 费用中心 -&gt; 订单类型选择“续费端口” -&gt; 平台选择“WhatsApp” -&gt; 搜索结果中备注为自动续费的订单即为扣费记录。</p>\n<figure><img src=\"./assets/images/manual-port-expiry-xdbemvbdxg-621102b7b1.png\" alt=\"\" loading=\"lazy\"></figure>"
       },
       {
+        "id": "c328470fe1e208e449be7857",
+        "title": "如何更换IP",
+        "updatedAt": "2026-09-23T18:55:00+08:00",
+        "searchText": "   一、功能说明  当账号发消息卡在线并提示<strong class=\"doc-blue-strong\">“stream error”</strong>时，可以直接使用“更换 IP”功能处理。     二、更换 IP 操作      1. 打开更换 IP 入口  占用 IP 的账号都会显示“更换 IP”入口。        2. 选择新的 IP  点击“更换 IP”按钮，在弹窗中选择要更换的 IP。    点击“确认”按钮完成更换。        3. 确认结果  页面提示 IP 更换成功后，即可继续使用账号。   ",
+        "html": "<h2>一、功能说明</h2>\n<p>当账号发消息卡在线并提示<strong class=\"doc-blue-strong\">“stream error”</strong>时，可以直接使用“更换 IP”功能处理。</p>\n<h2>二、更换 IP 操作</h2>\n<h3>1. 打开更换 IP 入口</h3>\n<p>占用 IP 的账号都会显示“更换 IP”入口。</p>\n<figure><img src=\"./assets/images/F3Y_oCe96x.png\" alt=\"\" loading=\"lazy\"></figure>\n<h3>2. 选择新的 IP</h3>\n<p>点击“更换 IP”按钮，在弹窗中选择要更换的 IP。</p>\n<figure><img src=\"./assets/images/l-_ovMG3b6.png\" alt=\"\" loading=\"lazy\"></figure>\n<p>点击“确认”按钮完成更换。</p>\n<figure><img src=\"./assets/images/rWeTXkjG5b.png\" alt=\"\" loading=\"lazy\"></figure>\n<h3>3. 确认结果</h3>\n<p>页面提示 IP 更换成功后，即可继续使用账号。</p>\n<figure><img src=\"./assets/images/BiZJ_HeifK.png\" alt=\"\" loading=\"lazy\"></figure>"
+      },
+      {
         "id": "5ea75dc9a9082425d6b79471",
         "title": "如何绩效上传",
         "updatedAt": "2026-05-27T00:00:00+08:00",
@@ -217,6 +224,13 @@
         "updatedAt": "2026-09-23T18:49:39+08:00",
         "searchText": "  添加托号是把带盾牌的号码加入联系人列表，主要用途是拉号进群。    >   注意：添加托号与上传通讯录不同，也不代表添加好友。不能通过此功能导入后私聊发信息，否则会有封禁风险。       一、功能说明  添加托号仅将<strong class=\"doc-blue-strong\">带盾牌的号码</strong>加入联系人列表，<strong class=\"doc-blue-strong\">没有添加好友</strong>，主要用于<strong class=\"doc-blue-strong\">拉号进群</strong>。     二、操作步骤  1. 确认操作账号处于<strong class=\"doc-blue-strong\">在线</strong>状态，在账号列表界面点击“添加托号”按钮，打开弹窗。 2. 下载模板文件，按模板填写信息，再选择要上传的文件。 3. 点击“确认”按钮，前往坐席的联系人列表，查看是否出现已上传的托号。  >   只上传有盾牌的账号。如果联系人列表没有显示，可以等待 5 分钟后刷新界面再查看。         三、模板示例  填写格式请参考以下模板截图：   ",
         "html": "<p class=\"lead\"><strong>添加托号是把带盾牌的号码加入联系人列表，主要用途是拉号进群。</strong></p>\n<blockquote><strong>注意：添加托号与上传通讯录不同，也不代表添加好友。不能通过此功能导入后私聊发信息，否则会有封禁风险。</strong></blockquote>\n<h2>一、功能说明</h2>\n<p>添加托号仅将<strong class=\"doc-blue-strong\">带盾牌的号码</strong>加入联系人列表，<strong class=\"doc-blue-strong\">没有添加好友</strong>，主要用于<strong class=\"doc-blue-strong\">拉号进群</strong>。</p>\n<h2>二、操作步骤</h2>\n<ol class=\"doc-list\"><li>确认操作账号处于<strong class=\"doc-blue-strong\">在线</strong>状态，在账号列表界面点击“添加托号”按钮，打开弹窗。</li><li>下载模板文件，按模板填写信息，再选择要上传的文件。</li><li>点击“确认”按钮，前往坐席的联系人列表，查看是否出现已上传的托号。</li></ol>\n<blockquote><strong>只上传有盾牌的账号。如果联系人列表没有显示，可以等待 5 分钟后刷新界面再查看。</strong></blockquote>\n<figure><img src=\"./assets/images/Loe19cTDIR.png\" alt=\"\" loading=\"lazy\"></figure>\n<h2>三、模板示例</h2>\n<p>填写格式请参考以下模板截图：</p>\n<figure><img src=\"./assets/images/CR2O1oVNd-.png\" alt=\"\" loading=\"lazy\"></figure>"
+      },
+      {
+        "id": "ebc3991d59db62c8642960cc",
+        "title": "消息重连应该怎么办",
+        "updatedAt": "2026-09-23T18:55:00+08:00",
+        "searchText": "   一、后管系统操作  在线状态的账号都会显示“修复”按钮。  点击“修复”按钮，页面提示修复成功即可。         二、坐席系统操作  1. 在账号列表中选中需要处理的账号并点击右键。 2. 选择“修复账号”。 3. 页面提示修复账号成功后，完成消息重连。     ",
+        "html": "<h2>一、后管系统操作</h2>\n<p>在线状态的账号都会显示“修复”按钮。</p>\n<p>点击“修复”按钮，页面提示修复成功即可。</p>\n<figure><img src=\"./assets/images/aHEM43l6NN.png\" alt=\"\" loading=\"lazy\"></figure>\n<figure><img src=\"./assets/images/MqgGYKN1Lh.png\" alt=\"\" loading=\"lazy\"></figure>\n<h2>二、坐席系统操作</h2>\n<ol class=\"doc-list\"><li>在账号列表中选中需要处理的账号并点击右键。</li><li>选择“修复账号”。</li><li>页面提示修复账号成功后，完成消息重连。</li></ol>\n<figure><img src=\"./assets/images/GjYpSxF3KJ.png\" alt=\"\" loading=\"lazy\"></figure>\n<figure><img src=\"./assets/images/1ccAgVt3SR.png\" alt=\"\" loading=\"lazy\"></figure>"
       }
     ]
   },
