@@ -19,7 +19,7 @@
     "category": {
       "id": "4623ca0b97109196381e087b",
       "name": "星辰Whatsapp使用手册V2.0",
-      "articlesCount": 27
+      "articlesCount": 28
     },
     "articles": [
       {
@@ -210,6 +210,13 @@
         "updatedAt": "2026-09-23T17:30:00+08:00",
         "searchText": "   一、二维码入口  1. 打开 WhatsApp 账号列表。 2. 搜索状态为<strong class=\"doc-blue-strong\">“在线”</strong>的账号。 3. 点击账号头像旁边的绿色二维码图标。       二、使用二维码  弹出二维码窗口后，可以使用手机上的其他账号扫码添加好友，也可以点击刷新二维码生成新的二维码。       三、异常情况处理      情况 1：打开后没有显示二维码  直接点击<strong class=\"doc-blue-strong\">“刷新二维码”</strong>，重新加载二维码。        情况 2：刷新失败并提示账号处于离线状态  如果点击刷新二维码后提示<strong class=\"doc-blue-strong\">“账号处于离线状态”</strong>，同时账号状态变成离线：  1. 先将账号重新上线。 2. 账号恢复在线后，再次点击<strong class=\"doc-blue-strong\">“刷新二维码”</strong>。   ",
         "html": "<h2>一、二维码入口</h2>\n<ol class=\"doc-list\"><li>打开 WhatsApp 账号列表。</li><li>搜索状态为<strong class=\"doc-blue-strong\">“在线”</strong>的账号。</li><li>点击账号头像旁边的绿色二维码图标。</li></ol>\n<figure><img src=\"./assets/images/A0kwIUu5YZ.png\" alt=\"\" loading=\"lazy\"></figure>\n<h2>二、使用二维码</h2>\n<p>弹出二维码窗口后，可以使用手机上的其他账号扫码添加好友，也可以点击刷新二维码生成新的二维码。</p>\n<figure><img src=\"./assets/images/IOLNioIrsx.png\" alt=\"\" loading=\"lazy\"></figure>\n<h2>三、异常情况处理</h2>\n<h3>情况 1：打开后没有显示二维码</h3>\n<p>直接点击<strong class=\"doc-blue-strong\">“刷新二维码”</strong>，重新加载二维码。</p>\n<figure><img src=\"./assets/images/N0MZN2ViyY.png\" alt=\"\" loading=\"lazy\"></figure>\n<h3>情况 2：刷新失败并提示账号处于离线状态</h3>\n<p>如果点击刷新二维码后提示<strong class=\"doc-blue-strong\">“账号处于离线状态”</strong>，同时账号状态变成离线：</p>\n<ol class=\"doc-list\"><li>先将账号重新上线。</li><li>账号恢复在线后，再次点击<strong class=\"doc-blue-strong\">“刷新二维码”</strong>。</li></ol>\n<figure><img src=\"./assets/images/IdIY86FUJC.png\" alt=\"\" loading=\"lazy\"></figure>"
+      },
+      {
+        "id": "6a82f2f23892f81caa27c4a0",
+        "title": "如何添加托号",
+        "updatedAt": "2026-09-23T18:49:39+08:00",
+        "searchText": "  添加托号是把带盾牌的号码加入联系人列表，主要用途是拉号进群。    >   注意：添加托号与上传通讯录不同，也不代表添加好友。不能通过此功能导入后私聊发信息，否则会有封禁风险。       一、功能说明  添加托号仅将<strong class=\"doc-blue-strong\">带盾牌的号码</strong>加入联系人列表，<strong class=\"doc-blue-strong\">没有添加好友</strong>，主要用于<strong class=\"doc-blue-strong\">拉号进群</strong>。     二、操作步骤  1. 确认操作账号处于<strong class=\"doc-blue-strong\">在线</strong>状态，在账号列表界面点击“添加托号”按钮，打开弹窗。 2. 下载模板文件，按模板填写信息，再选择要上传的文件。 3. 点击“确认”按钮，前往坐席的联系人列表，查看是否出现已上传的托号。  >   只上传有盾牌的账号。如果联系人列表没有显示，可以等待 5 分钟后刷新界面再查看。         三、模板示例  填写格式请参考以下模板截图：   ",
+        "html": "<p class=\"lead\"><strong>添加托号是把带盾牌的号码加入联系人列表，主要用途是拉号进群。</strong></p>\n<blockquote><strong>注意：添加托号与上传通讯录不同，也不代表添加好友。不能通过此功能导入后私聊发信息，否则会有封禁风险。</strong></blockquote>\n<h2>一、功能说明</h2>\n<p>添加托号仅将<strong class=\"doc-blue-strong\">带盾牌的号码</strong>加入联系人列表，<strong class=\"doc-blue-strong\">没有添加好友</strong>，主要用于<strong class=\"doc-blue-strong\">拉号进群</strong>。</p>\n<h2>二、操作步骤</h2>\n<ol class=\"doc-list\"><li>确认操作账号处于<strong class=\"doc-blue-strong\">在线</strong>状态，在账号列表界面点击“添加托号”按钮，打开弹窗。</li><li>下载模板文件，按模板填写信息，再选择要上传的文件。</li><li>点击“确认”按钮，前往坐席的联系人列表，查看是否出现已上传的托号。</li></ol>\n<blockquote><strong>只上传有盾牌的账号。如果联系人列表没有显示，可以等待 5 分钟后刷新界面再查看。</strong></blockquote>\n<figure><img src=\"./assets/images/Loe19cTDIR.png\" alt=\"\" loading=\"lazy\"></figure>\n<h2>三、模板示例</h2>\n<p>填写格式请参考以下模板截图：</p>\n<figure><img src=\"./assets/images/CR2O1oVNd-.png\" alt=\"\" loading=\"lazy\"></figure>"
       }
     ]
   },
