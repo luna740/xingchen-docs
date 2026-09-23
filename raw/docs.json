@@ -3,7 +3,7 @@
     "category": {
       "id": "4623ca0b97109196381e087b",
       "name": "星辰Whatsapp使用手册V2.0",
-      "articlesCount": 25
+      "articlesCount": 26
     },
     "articles": [
       {
@@ -180,6 +180,13 @@
         "updatedAt": "2026-05-27T00:00:00+08:00",
         "searchText": "   操作步骤  1. 对方发的图片显示上传按钮后，可以点击按钮上传绩效。     注意：发了图片后，需要回复信息，或者对方再发送除图片、视频之外的信息，才会显示上传按钮。对方发送图文加文字时，会直接显示上传按钮。       2. 填写上传信息，按上传表单填写正确信息，点击提交。       3. 信息提交后会进入审核状态，后台审核后，可以查询状态。            4. 如果出现审核不通过，需要重新修改提交。       5. 等待出现审核通过，即表示数据上传正确并已审核通过。      ",
         "html": "<h2>操作步骤</h2>\n<ol class=\"doc-list\"><li>对方发的图片显示上传按钮后，可以点击按钮上传绩效。<p>注意：发了图片后，需要回复信息，或者对方再发送除图片、视频之外的信息，才会显示上传按钮。对方发送图文加文字时，会直接显示上传按钮。</p><figure><img src=\"./assets/images/manual-performance-upload-p1d_bqfn-n-523829ade3.png\" alt=\"\" loading=\"lazy\"></figure></li><li>填写上传信息，按上传表单填写正确信息，点击提交。<figure><img src=\"./assets/images/manual-performance-upload-yu6zrwywkk-5ad2a6ade6.png\" alt=\"\" loading=\"lazy\"></figure></li><li>信息提交后会进入审核状态，后台审核后，可以查询状态。<figure><img src=\"./assets/images/manual-performance-upload-mrltrsnskz-2a4fd06690.png\" alt=\"\" loading=\"lazy\"></figure><figure><img src=\"./assets/images/manual-performance-upload-irxxw6sicb-700afd6a7b.png\" alt=\"\" loading=\"lazy\"></figure></li><li>如果出现审核不通过，需要重新修改提交。<figure><img src=\"./assets/images/manual-performance-upload-x0s7p6bwib-aef75184cd.png\" alt=\"\" loading=\"lazy\"></figure></li><li>等待出现审核通过，即表示数据上传正确并已审核通过。<figure><img src=\"./assets/images/manual-performance-upload-20ksrgyoqb-3169368425.png\" alt=\"\" loading=\"lazy\"></figure></li></ol>"
+      },
+      {
+        "id": "6ab372e7a6acbf33a85160ac",
+        "title": "如何进行信任检测",
+        "updatedAt": "2026-09-23T15:25:46+08:00",
+        "searchText": ">   注：所有状态下账号都可以检测，也可以多次进行检测。       一、打开信任检测  打开 WhatsApp 账号列表，点击右边操作栏的“信任检测”按钮。       二、开始检测  弹出检测弹窗，点击“检测”按钮。       三、查看检测结果  得到检测结果：显示信任状态、采集时间，同时“检测”按钮变成“再次检测”。       四、查看账号信任状态  关闭弹窗后，账号信任状态变成检测后的结果，鼠标放上去还显示采集时间。       五、信任列及注意事项  账号列表新增“信任”列，在状态后面，鼠标放在“!”上有提示：账号被官方标记不信任，别人打开和你对话会收到官方不信任提示。  >   【信任】有时效性，被封禁了可以实时再检测一下是否还信任。    >   【不信任】复接后大概率还会是【不信任】。     ",
+        "html": "<blockquote><strong>注：所有状态下账号都可以检测，也可以多次进行检测。</strong></blockquote>\n<h2>一、打开信任检测</h2>\n<p>打开 WhatsApp 账号列表，点击右边操作栏的“信任检测”按钮。</p>\n<figure><img src=\"./assets/images/i24JiWKghT.png\" alt=\"\" loading=\"lazy\"></figure>\n<h2>二、开始检测</h2>\n<p>弹出检测弹窗，点击“检测”按钮。</p>\n<figure><img src=\"./assets/images/N4LwemhbFo.png\" alt=\"\" loading=\"lazy\"></figure>\n<h2>三、查看检测结果</h2>\n<p>得到检测结果：显示信任状态、采集时间，同时“检测”按钮变成“再次检测”。</p>\n<figure><img src=\"./assets/images/9q9f5rMRs6.png\" alt=\"\" loading=\"lazy\"></figure>\n<h2>四、查看账号信任状态</h2>\n<p>关闭弹窗后，账号信任状态变成检测后的结果，鼠标放上去还显示采集时间。</p>\n<figure><img src=\"./assets/images/-Dmaug2Jvs.png\" alt=\"\" loading=\"lazy\"></figure>\n<h2>五、信任列及注意事项</h2>\n<p>账号列表新增“信任”列，在状态后面，鼠标放在“!”上有提示：账号被官方标记不信任，别人打开和你对话会收到官方不信任提示。</p>\n<blockquote><strong>【信任】有时效性，被封禁了可以实时再检测一下是否还信任。</strong></blockquote>\n<blockquote><strong>【不信任】复接后大概率还会是【不信任】。</strong></blockquote>\n<figure><img src=\"./assets/images/7tw8H1hF3r.png\" alt=\"\" loading=\"lazy\"></figure>"
       }
     ]
   },
