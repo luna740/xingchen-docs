@@ -59,6 +59,8 @@ const PINNED_ARTICLE_ORDER = {
 };
 
 const HIDDEN_ARTICLE_IDS = new Set([
+  "8de598e0dbfd06c124eea10e",
+  "0060aa2996494c2ba72a6382",
   "4f6105e4d0d02911ec7af302",
   "a2980b63aff5e5944f3a8147",
   "4c12206ddddf3471b6e3e5c0",
