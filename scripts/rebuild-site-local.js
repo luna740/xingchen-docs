@@ -8,6 +8,7 @@ const SITE_DIR = path.join(ROOT, "site");
 
 
 const CATEGORY_ORDER = [
+  "[重要]风控相关",
   "\u661f\u8fb0Whatsapp\u4f7f\u7528\u624b\u518cV2.0",
   "\u5e38\u89c1\u95ee\u9898",
   "\u6d4b\u8bd5\u7ed3\u679c",
