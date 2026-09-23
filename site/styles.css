@@ -403,8 +403,9 @@ h1 {
 
 .doc img {
   display: block;
-  width: 100%;
+  width: auto;
   max-width: 100%;
+  height: auto;
   border: 1px solid var(--border-soft);
   border-radius: 6px;
   background: #fff;
