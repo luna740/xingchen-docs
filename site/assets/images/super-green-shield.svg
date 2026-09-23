@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="超级绿盾">
+  <path fill="#16a34a" d="M64 6 113 24v34c0 31-20 52-49 64C35 110 15 89 15 58V24L64 6Z"/>
+  <path fill="#15803d" d="M64 18 27 31v27c0 23 14 40 37 51 23-11 37-28 37-51V31L64 18Z"/>
+  <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="9" d="m35 65 13 13 22-25m2 12 8 8 14-16"/>
+</svg>
