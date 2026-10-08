@@ -31,6 +31,7 @@ const PINNED_ARTICLE_ORDER = {
     "91607c6bee58eee082787eba",
     "75d4ce22d9f68f92fa0d7e6e",
     "d4e55cd8ffc5569b71db6eeb",
+    "manual-batch-invite-groups",
     "749e3e05e9e68b4ea6aca3a0",
     "58b9b6849105343563639e9c",
     "fad933e15da3a515f5882972",
