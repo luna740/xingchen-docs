@@ -20,7 +20,6 @@ const PINNED_ARTICLE_ORDER = {
     "8a8a83d08de3e1db318905f2",
     "4bd71ff4ff791cc70cb2b33a",
     "3c582c7841373f5b2c92ce9c",
-    "6ad1871a5bc74533b1b476fa",
     "130e72704a7ad203b64004ca",
     "7d0b620f82cc816acc54d963",
     "43378e8e2b9f173541747e4b",
