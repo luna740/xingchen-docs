@@ -26,7 +26,7 @@
     "category": {
       "id": "4623ca0b97109196381e087b",
       "name": "星辰Whatsapp使用手册V2.0",
-      "articlesCount": 31
+      "articlesCount": 32
     },
     "articles": [
       {
@@ -56,6 +56,13 @@
         "updatedAt": "2026-05-20T18:55:00+08:00",
         "searchText": "  本文说明坐席如何登录坐席系统，并使用已绑定的 WhatsApp 账号进行聊天。坐席系统的聊天操作方式与 WhatsApp 网页端基本一致。        一、打开坐席系统  1. 打开坐席系统登录页面。 2. 访问链接： 星辰坐席系统  https://www.xckfkf.com/ /login           二、登录坐席账号  1. 输入正确的坐席账号。 2. 输入密码和验证码。 3. 点击【确定】，提交登录。          三、进入聊天页面  1. 登录成功后，系统会进入坐席系统主页面。 2. 在坐席系统中选择需要操作的 WhatsApp 账号或会话。 3. 进入会话后即可进行私聊或群聊操作。       > 提示：坐席系统的聊天体验与 WhatsApp 网页端基本一致。如果看不到对应账号，请先确认该 WhatsApp 账号是否已经绑定到当前坐席。 ",
         "html": "<p class=\"lead\"><strong>本文说明坐席如何登录坐席系统，并使用已绑定的 WhatsApp 账号进行聊天。坐席系统的聊天操作方式与 WhatsApp 网页端基本一致。</strong></p>\n<h2>一、打开坐席系统</h2>\n<ol class=\"doc-list\"><li>打开坐席系统登录页面。</li><li>访问链接：<a href=\"https://www.xckfkf.com/#/login\">星辰坐席系统</a><figure><img src=\"./assets/images/wdFQn6PTKs-31120cf441.png\" alt=\"\" loading=\"lazy\"></figure></li></ol>\n<h2>二、登录坐席账号</h2>\n<ol class=\"doc-list\"><li>输入正确的坐席账号。</li><li>输入密码和验证码。</li><li>点击【确定】，提交登录。<figure><img src=\"./assets/images/ndI9Xsp4R6-4781beeb5c.png\" alt=\"\" loading=\"lazy\"></figure></li></ol>\n<h2>三、进入聊天页面</h2>\n<ol class=\"doc-list\"><li>登录成功后，系统会进入坐席系统主页面。</li><li>在坐席系统中选择需要操作的 WhatsApp 账号或会话。</li><li>进入会话后即可进行私聊或群聊操作。<figure><img src=\"./assets/images/OhMkAUis8s-44e403bb1a.png\" alt=\"\" loading=\"lazy\"></figure></li></ol>\n<blockquote>提示：坐席系统的聊天体验与 WhatsApp 网页端基本一致。如果看不到对应账号，请先确认该 WhatsApp 账号是否已经绑定到当前坐席。</blockquote>"
+      },
+      {
+        "id": "6ad1871a5bc74533b1b476fa",
+        "title": "低风控使用教程",
+        "updatedAt": "2026-10-16T00:00:00+08:00",
+        "searchText": "低风控模式用于检查对方是否已将你添加为好友。开启后，双方互加好友时可以正常发送消息；对方尚未添加你，或已将你拉黑时，消息会发送失败。     一、如何开启低风控模式  1. 打开与对方的私聊窗口。 2. 在文本输入框下方，找到最右侧的低风控开关。 3. 点击开关，开启低风控模式。      开启前，请先将对方添加为好友。   如果你还没有添加对方，就无法开启低风控模式。       二、对方尚未添加你为好友  如果你已添加对方，但对方还没有添加你，低风控模式下的消息会发送失败，并出现以下提示：  > 对方没有加你为好友，低风控开启失败，消息发送失败，请手动关闭低风控模式。  出现此提示时，请先确认双方是否已互加好友；如需退出该模式，可手动关闭低风控开关。       三、双方已互加好友  双方互加好友后，在未被对方拉黑的情况下，低风控模式下的消息可以正常发送。发送成功后，可通过以下标识确认状态：  - 联系人显示“双向好友”标识。 - 消息显示“低模式”标识。       四、已互加好友，但被对方拉黑  即使双方已经互加好友，被对方拉黑后，低风控模式下的消息仍会发送失败。对方解除拉黑后，该模式下的消息可以恢复正常发送。       五、低风控额度说明  部分地区的账号设有低风控使用额度。目前已知以下地区存在额度限制：  - 澳大利亚 - 沙特阿拉伯 - 以色列  可在低风控开关处查看剩余额度百分比，如下图所示。    额度使用完后，系统会自动关闭低风控模式，暂时无法重新开启，并提示“低风控模式，次数已用完”。额度会在每月 1 日刷新，刷新后即可继续使用。   ",
+        "html": "<p>低风控模式用于检查对方是否已将你添加为好友。开启后，双方互加好友时可以正常发送消息；对方尚未添加你，或已将你拉黑时，消息会发送失败。</p>\n<h2>一、如何开启低风控模式</h2>\n<ol class=\"doc-list\"><li>打开与对方的私聊窗口。</li><li>在文本输入框下方，找到最右侧的低风控开关。</li><li>点击开关，开启低风控模式。</li></ol>\n<figure><img src=\"./assets/images/manual-low-risk-1.png\" alt=\"\" loading=\"lazy\"></figure>\n<p><strong>开启前，请先将对方添加为好友。</strong> 如果你还没有添加对方，就无法开启低风控模式。</p>\n<figure><img src=\"./assets/images/manual-low-risk-2.png\" alt=\"\" loading=\"lazy\"></figure>\n<h2>二、对方尚未添加你为好友</h2>\n<p>如果你已添加对方，但对方还没有添加你，低风控模式下的消息会发送失败，并出现以下提示：</p>\n<blockquote>对方没有加你为好友，低风控开启失败，消息发送失败，请手动关闭低风控模式。</blockquote>\n<p>出现此提示时，请先确认双方是否已互加好友；如需退出该模式，可手动关闭低风控开关。</p>\n<figure><img src=\"./assets/images/manual-low-risk-3.png\" alt=\"\" loading=\"lazy\"></figure>\n<h2>三、双方已互加好友</h2>\n<p>双方互加好友后，在未被对方拉黑的情况下，低风控模式下的消息可以正常发送。发送成功后，可通过以下标识确认状态：</p>\n<ul class=\"doc-list\"><li>联系人显示“双向好友”标识。</li><li>消息显示“低模式”标识。</li></ul>\n<figure><img src=\"./assets/images/manual-low-risk-4.png\" alt=\"\" loading=\"lazy\"></figure>\n<h2>四、已互加好友，但被对方拉黑</h2>\n<p>即使双方已经互加好友，被对方拉黑后，低风控模式下的消息仍会发送失败。对方解除拉黑后，该模式下的消息可以恢复正常发送。</p>\n<figure><img src=\"./assets/images/manual-low-risk-5.png\" alt=\"\" loading=\"lazy\"></figure>\n<h2>五、低风控额度说明</h2>\n<p>部分地区的账号设有低风控使用额度。目前已知以下地区存在额度限制：</p>\n<ul class=\"doc-list\"><li>澳大利亚</li><li>沙特阿拉伯</li><li>以色列</li></ul>\n<p>可在低风控开关处查看剩余额度百分比，如下图所示。</p>\n<figure><img src=\"./assets/images/manual-low-risk-6.png\" alt=\"\" loading=\"lazy\"></figure>\n<p>额度使用完后，系统会自动关闭低风控模式，暂时无法重新开启，并提示“低风控模式，次数已用完”。额度会在每月 1 日刷新，刷新后即可继续使用。</p>\n<figure><img src=\"./assets/images/manual-low-risk-7.png\" alt=\"\" loading=\"lazy\"></figure>"
       },
       {
         "id": "130e72704a7ad203b64004ca",
